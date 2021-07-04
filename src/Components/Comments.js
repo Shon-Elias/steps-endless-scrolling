@@ -16,7 +16,6 @@ const Comments = () => {
 
   //  create ref
   const observer = useRef()
-
   const lastCommentElementRef = useCallback(node => {
     // if loading, don't trigger scorlling
     if (loading) return
@@ -36,28 +35,30 @@ const Comments = () => {
   }, [loading, hasMore])
 
 
+
+
   return (
     <div className='comments-box'>Comments
       {
         comments.map((comment, i) => {
 
-        // console.log('comment #', i)
+        console.log('comment #', i)
           if (comments.length === i + 1) {
             return (
-              <div  ref={lastCommentElementRef} key={comment.id}>
+              <div className='last-comment' ref={lastCommentElementRef} key={comment.id}>
                 {comment.id}
-                <div >{comment.name}</div>
-                <div >{comment.email}</div>
-                <div >{comment.body}</div>
+                <div className='comment-name'>{comment.name}</div>
+                <div className='comment-email'>{comment.email}</div>
+                <div className='comment-id'>{comment.body}</div>
               </div>
             )
           } else {
             return (
-              <div key={comment.id}>
+              <div className='comment' key={comment.id}>
                 {comment.id}
-                <div >{comment.name}</div>
-                <div >{comment.email}</div>
-                <div >{comment.body}</div>
+                <div className='comment-name'>{comment.name}</div>
+                <div className='comment-email'>{comment.email}</div>
+                <div className='comment-id'>{comment.body}</div>
             </div>
             )
           }

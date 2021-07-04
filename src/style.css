@@ -2,7 +2,7 @@
   height: 90vh;
   width: 80vw;
   margin: 5vh auto;
-  border: 3px solid blue;
+
 }
 
 .add-comment-box{
@@ -15,6 +15,25 @@
 .comments-box{
   height: 60vh;
   width: inherit;
-  border: 2px solid red;
+  border-top: 3px solid black;
   overflow-y: scroll;
+}
+
+
+.comment{
+  border-bottom: 3px solid dodgerblue;
+  height: fit-content;
+  margin: 5px;
+
+}
+
+.last-comment{
+  border-bottom: 10px solid dodgerblue;
+  height: fit-content;
+  margin: 5px;
+}
+
+.comment-name{
+  margin: 2px;
+  color:gray;
 }
