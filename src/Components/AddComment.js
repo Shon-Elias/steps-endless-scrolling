@@ -1,6 +1,6 @@
 const AddComment = () => {
   return (
-    <div>AddComment</div>
+    <div className='add-comment-box'>AddComment</div>
   )
 }
 export default AddComment;

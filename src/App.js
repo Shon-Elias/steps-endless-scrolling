@@ -3,7 +3,7 @@ import Comments from './Components/Comments';
 
 function App() {
   return (
-    <div >
+    <div className='main-form'>
       <AddComment />
       <Comments />
     </div>

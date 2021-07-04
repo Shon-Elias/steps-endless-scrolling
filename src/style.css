@@ -1,0 +1,20 @@
+.main-form{
+  height: 90vh;
+  width: 80vw;
+  margin: 5vh auto;
+  border: 3px solid blue;
+}
+
+.add-comment-box{
+  height: 20vh;
+  width: inherit;
+  border: 2px solid red;
+  margin-bottom: 9vh;
+}
+
+.comments-box{
+  height: 60vh;
+  width: inherit;
+  border: 2px solid red;
+  overflow-y: scroll;
+}

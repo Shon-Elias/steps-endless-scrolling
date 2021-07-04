@@ -1,6 +1,12 @@
 const Comments = () => {
   return (
-    <div>Comments</div>
+    <div className='comments-box'>Comments
+
+      <div>id</div>
+      <div>name</div>
+      <div>email</div>
+      <div>comment body</div>
+    </div>
   )
 }
 export default Comments;
