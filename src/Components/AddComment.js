@@ -1,5 +1,6 @@
 import { useState } from "react"
-
+import axios from 'axios';
+import { nanoid } from 'nanoid';
 
 const AddComment = () => {
 
@@ -8,7 +9,30 @@ const AddComment = () => {
   const submitComment = (e) => {
     e.preventDefault()
 
+    const comment = {
+      id: 1,
+      postId: nanoid(),
+      email: 'example@example.com',
+      name: 'username',
+      body: newComment
+    }
+
+    postComment(comment);
   }
+
+  const postComment = comment => {
+    axios.post('https://jsonplaceholder.typicode.com/posts', comment
+    )
+    .then(res => {
+      console.log("post", res);
+
+      setNewComment('')
+    })
+    .catch(e => {
+      console.log('post req err', e)
+    })
+  }
+
 
 
 
