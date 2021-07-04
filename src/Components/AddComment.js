@@ -33,23 +33,22 @@ const AddComment = () => {
     })
   }
 
-
-
-
-
   return (
-    <form  onSubmit={submitComment} >
-        <div  >
+    <form className='add-comment-box' onSubmit={submitComment} >
+        <div  className='add-comment-inputs'>
         <div>
           <textarea
-            placeholder=" comment"
+            className='inputs'
+            name=" comment"
+            placeholder="Comment"
             value={newComment}
-            onChange={e=>setNewComment(e.target.value)}
+            onChange={e => setNewComment(e.target.value)}
             required
           />
         </div>
         <div>
           <input
+            className="submit"
             type="submit"
             value="Post" />
         </div>

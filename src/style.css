@@ -8,13 +8,31 @@
 .add-comment-box{
   height: 20vh;
   width: inherit;
-  border: 2px solid red;
-  margin-bottom: 9vh;
+  border: 2px solid dodgerblue;
+  background-color: deepskyblue;
+}
+
+.add-comment-inputs{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.inputs{
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.submit{
+  width: 100%;
 }
 
 .comments-box{
   height: 60vh;
   width: inherit;
+  margin-top: 10px;
   border-top: 3px solid black;
   overflow-y: scroll;
 }
