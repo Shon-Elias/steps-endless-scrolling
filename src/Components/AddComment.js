@@ -1,10 +1,11 @@
-import { useState } from "react"
+// import { useState } from "react"
 import axios from 'axios';
 import { nanoid } from 'nanoid';
+import useLocalStorage from '../Hooks/useLocalStorage';
 
 const AddComment = () => {
 
-  const [newComment, setNewComment] = useState('')
+  const [newComment, setNewComment] = useLocalStorage('comment','')
 
   const submitComment = (e) => {
     e.preventDefault()
